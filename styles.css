@@ -1,0 +1,55 @@
+body {
+    --color1: #222222;
+    --color2: #68D372;
+    --color3: #E6EEF5;
+    --vaqay: #1F9683;
+    --durak: #0000FF;
+    --sc: #567C8F;
+    background-color: var(--color1);
+    color: var(--color2);
+}
+
+a {
+    text-decoration: none;
+}
+
+section {
+    padding: 60px 0;
+}
+
+#intro {
+    padding-top: 126px;
+}
+
+nav {
+    background-color: var(--color1);
+    border-bottom: 2px solid var(--color2);
+}
+
+a.navbar-brand {
+    color: var(--color2);
+}
+
+@media (max-width: 576px) {
+    .engineer {
+        font-size: 1.15rem;
+    }
+}
+
+@media (min-width: 576px) {
+    .engineer {
+        font-size: 1.25rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .engineer {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .engineer {
+        font-size: 2rem;
+    }
+}

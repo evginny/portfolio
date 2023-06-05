@@ -1,0 +1,658 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- <link rel="stylesheet" href="/portfolio2/styles.css"> -->
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <title>Portfolio</title>
+    <style>
+        body {
+            --color1: #222222;
+            --color2: #68D372;
+            --color3: #E6EEF5;
+            --vaqay: #1F9683;
+            --durak: #0000FF;
+            --sc: #567C8F;
+            background-color: var(--color1);
+            color: aliceblue;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        section {
+            padding: 60px 0;
+        }
+
+        #intro {
+            padding-top: 126px;
+        }
+
+        nav {
+            background-color: var(--color1);
+            border-bottom: 2px solid var(--color2);
+        }
+
+        .bi-1,
+        .bi-home {
+            color: var(--color2);
+        }
+
+        .bi-1 {
+            font-size: 2em;
+        }
+
+        .bi-2 {
+            font-size: 1.3em;
+        }
+
+        .bi-1:hover {
+            color: aliceblue;
+        }
+
+        .a-icon {
+            margin-right: 20px;
+        }
+
+        .contact-link {
+            color: var(--color2);
+        }
+
+        .contact-link:hover {
+            color: aliceblue;
+        }
+
+        .cssbuttons-io-button {
+            border: solid 4px var(--color2);
+            background-color: var(--color1);
+            color: aliceblue;
+        }
+
+        .cssbuttons-io-button:hover {
+            box-shadow: 0 0.5em 1.5em -0.5em var(--color2);
+            color: var(--color2);
+        }
+
+        .display-5 {
+            text-decoration: underline var(--color2);
+        }
+
+        .about-me-text {
+            border: 1px solid var(--color2);
+            border-radius: 20px;
+            box-shadow: 0 0.5em 1.5em -0.5em var(--color2);
+        }
+
+        .card {
+            background-color: var(--color1);
+            border-color: var(--color2);
+            box-shadow: 0 0.5em 1.5em -0.5em var(--color2);
+        }
+
+        .progress-bar {
+            background-color: var(--color2);
+        }
+
+        .card-body a {
+            color: #68D372;
+        }
+
+        .card-body a:hover {
+            color: aliceblue;
+        }
+
+        .card-body a i {
+            font-size: 1.5em;
+        }
+
+        .carousel-control-next-icon,
+        .carousel-control-prev-icon {
+            background-image: none !important;
+        }
+
+        .carousel-control-next-icon:after,
+        .carousel-control-prev-icon:after {
+            content: '>';
+            font-size: 55px;
+            color: var(--color1);
+        }
+
+        .carousel-control-prev-icon:after {
+            content: '<';
+        }
+
+        .form-control:focus {
+            box-shadow: 0 0.5em 1.5em -0.5em var(--color2);
+        }
+
+        @media (max-width: 576px) {
+            .engineer {
+                font-size: 1.15rem;
+            }
+        }
+
+        @media (min-width: 576px) {
+            .engineer {
+                font-size: 1.25rem;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .engineer {
+                font-size: 1.5rem;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .engineer {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <nav class="navbar fixed-top navbar-expand-md navbar-dark pt-3 pb-2">
+        <div class="container-xxl">
+            <!-- navbar brand / title -->
+            <a class="navbar-brand" href="#intro">
+                <i class="bi-home bi bi-house"></i>
+                <span class="text-secondary fw-bold">
+                    Home
+                </span>
+            </a>
+            <!-- toggle button for mobile nav -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
+                aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- navbar links -->
+            <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Get in Touch</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- intro    -->
+    <section id="intro" class="d-flex justify-content-center align-items-center">
+        <div class="container-lg">
+            <div class="row g-4 justify-content-center align-items-center">
+                <div class="col-lg-12 text-center">
+                    <h1>
+                        <div class="display-3 d-none d-lg-block">Hi, I am Evgeniya Kalashnikova <br> a.k.a. Ginny</div>
+                        <div class="display-5 d-none d-md-block d-lg-none">Hi, I am Evgeniya Kalashnikova <br> a.k.a.
+                            Ginny</div>
+                        <div class="display-6 d-block d-md-none">Hi, I am Evgeniya Kalashnikova <br> a.k.a. Ginny</div>
+
+                        <div class="display-6 text-muted engineer">Computer Science Senior | Aspiring Software
+                            Engineer</div>
+                    </h1>
+                </div>
+                <div class="col-lg-12 text-center">
+                    <a class="a-icon" href="https://github.com/evginny"><i class="bi-1 bi bi-github"></i></a>
+                    <a href="https://www.linkedin.com/in/ev-kalashn/"><i class="bi-1 bi bi-linkedin"></i></a>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2">
+                    <button class="cssbuttons-io-button btn w-100"><i class="bi bi-download"></i>
+                        Resume</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- about me -->
+    <section id="about" class="mt-4">
+        <div class="container-lg">
+            <h1>
+                <div class="display-5">About Me</div>
+            </h1>
+            <div class="row">
+                <div class="col-md-12 d-flex align-items-center">
+                    <div class="col-md-5 text-center d-none d-md-block">
+                        <img src="/assets/programmer.png" class="img-fluid" alt="programmer">
+                    </div>
+                    <div class="col-md-7 text-start about-me-text p-2">
+                        I am a senior computer science student at Florida State University, set to graduate in Fall 2023
+                        with
+                        a
+                        GPA of 3.98. Beyond my academic achievements, my passion for computer science drives me to
+                        constantly
+                        seek new challenges and opportunities for growth. <br>
+                        I find great joy in programming, and during my studies, I have primarily focused on C++ and
+                        Java.
+                        However, through various projects, I have also gained experience in languages such as C#, C,
+                        HTML,
+                        CSS,
+                        and SQL. With a strong foundation in object-oriented programming, I am well-versed in data
+                        structures,
+                        algorithms, and full-stack development.<br>
+                        Outside of academia, I have had the privilege of serving as a Tutorial Assistant at Florida
+                        State
+                        University. Through this role, I have had the opportunity to assist fellow students in
+                        understanding
+                        complex concepts in C++ and Java. By conducting Q&A sessions, live demonstrations, and
+                        interactive
+                        discussions, I strive to foster an environment where learning is collaborative and
+                        enjoyable.<br>
+                        With a strong drive for continuous learning, a passion for computer science, and a diverse range
+                        of
+                        interests, I am eagerly seeking opportunities to contribute my creativity and expertise to
+                        impactful
+                        projects in the field.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- skills -->
+    <section id="skills" class="mt-4">
+        <div class="container-lg">
+            <h1>
+                <div class="display-5">Skills</div>
+            </h1>
+            <div class="row my-2 g-5 align-items-stretch justify-content-center">
+                <div class="col-8 col-lg-4 col-xl-4">
+                    <div class="card h-100">
+                        <h5 class="card-header">Programming Languages</h5>
+                        <div class="card-body">
+                            <!-- <h5 class="card-title">Special title treatment</h5> -->
+                            <p class="card-text mb-0">C++</p>
+                            <div class="progress mb-3">
+                                <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="75"
+                                    aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <p class="card-text mb-0">Java</p>
+                            <div class="progress mb-3">
+                                <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="75"
+                                    aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <p class="card-text mb-0">C</p>
+                            <div class="progress mb-3">
+                                <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="75"
+                                    aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <p class="card-text mb-0">C#</p>
+                            <div class="progress mb-3">
+                                <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="75"
+                                    aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <p class="card-text mb-0">SQL</p>
+                            <div class="progress mb-3">
+                                <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="75"
+                                    aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8 col-lg-4 col-xl-4">
+                    <div class="card h-100">
+                        <h5 class="card-header">Web Technologies</h5>
+                        <div class="card-body">
+                            <!-- <h5 class="card-title">Special title treatment</h5> -->
+                            <p class="card-text mb-0">HTML</p>
+                            <div class="progress mb-3">
+                                <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75"
+                                    aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <p class="card-text mb-0">CSS</p>
+                            <div class="progress mb-3">
+                                <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75"
+                                    aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <p class="card-text mb-0">REST APIs</p>
+                            <div class="progress mb-3">
+                                <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="75"
+                                    aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8 col-lg-4 col-xl-4">
+                    <div class="card h-100">
+                        <h5 class="card-header">Tools</h5>
+                        <div class="card-body">
+                            <!-- <h5 class="card-title">Special title treatment</h5> -->
+                            <p class="card-text mb-0">Visual Studio</p>
+                            <div class="progress mb-3">
+                                <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="75"
+                                    aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <p class="card-text mb-0">Visual Studio Code</p>
+                            <div class="progress mb-3">
+                                <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="75"
+                                    aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <p class="card-text mb-0">IntelliJ IDEA</p>
+                            <div class="progress mb-3">
+                                <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="75"
+                                    aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <p class="card-text mb-0">Git</p>
+                            <div class="progress mb-3">
+                                <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75"
+                                    aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <p class="card-text mb-0">GitHub</p>
+                            <div class="progress mb-3">
+                                <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="75"
+                                    aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- end container -->
+    </section>
+
+    <!-- projects -->
+    <section id="projects" class="mt-4">
+        <div class="container-lg">
+            <h1>
+                <div class="display-5">Projects</div>
+            </h1>
+            <div class="row my-2 g-5 align-items-stretch justify-content-center">
+                <div class="col-12 col-md-6 col-lg-6 col-xl-6">
+                    <div class="card mb-3 h-100">
+                        <div id="carouselIndicators2" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="/assets/durak1.png" class="d-block w-100" alt="Image 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/assets/durak2.png" class="d-block w-100" alt="Image 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/assets/durak3.png" class="d-block w-100" alt="Image 3">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/assets/durak5.png" class="d-block w-100" alt="Image 4">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicators2"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicators2"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div class="card-body" data-bs-toggle="tooltip" data-bs-placement="right"
+                            title="Want to see how it's made? Check out the code here">
+                            <a href="https://github.com/evginny"><i class="bi bi-github"></i>
+                                <span class="card-title fs-4">Durak Card Game</span>
+                            </a>
+                            <p class="card-text">Durak is a popular Russian card game. The game is
+                                implemented as a digital version where players can challenge an AI opponent. The project
+                                aims to provide an immersive gaming experience by allowing players to customize the
+                                game's background and card backs according to their preferences.</p>
+                            <span class="card-text"><small class="text-muted">Java with full UI and open-source
+                                    asserts in Java Swing</small></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-6 col-xl-6">
+                    <div class="card h-100">
+                        <div id="carouselIndicators3" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="/assets/login.png" class="d-block w-100" alt="Image 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/assets/inventory.png" class="d-block w-100" alt="Image 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/assets/add_inv.png" class="d-block w-100" alt="Image 3">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/assets/cust.png" class="d-block w-100" alt="Image 4">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/assets/cart.png" class="d-block w-100" alt="Image 5">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/assets/summary.png" class="d-block w-100" alt="Image 6">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicators3"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicators3"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div class="card-body" data-bs-toggle="tooltip" data-bs-placement="right"
+                            title="Want to see how it's made? Check out the code here">
+                            <a href="https://github.com/evginny"><i class="bi bi-github"></i>
+                                <span class="card-title fs-4">Shopping Application</span>
+                            </a>
+                            <p class="card-text">This project is focused on developing a robust, web-enabled e-commerce
+                                platform. Starting
+                                as a console application, it evolves to offer a user-friendly interface, efficient
+                                inventory management, and a streamlined checkout process. It supports search
+                                functionality, sorting options, promotional offers, and the ability to handle multiple
+                                shopping carts. The platform
+                                ensures data persistence, facilitating seamless interactions between the client and
+                                server, and maintains its state across sessions and restarts.</p>
+                            <span class="card-text"><small class="text-muted">C# and
+                                    WPF/UWP/Xamarin.Forms</small></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-6 col-xl-6">
+                    <div class="card mb-3 h-100">
+                        <div id="carouselIndicators1" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="/assets/landing.png" class="d-block w-100" alt="Image 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/assets/register.png" class="d-block w-100" alt="Image 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/assets/loginvaq.png" class="d-block w-100" alt="Image 3">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/assets/evginny-shared.png" class="d-block w-100" alt="Image 4">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/assets/profile.png" class="d-block w-100" alt="Image 5">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/assets/profile_edit.png" class="d-block w-100" alt="Image 6">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/assets/add_budget.png" class="d-block w-100" alt="Image 7">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/assets/shared.png" class="d-block w-100" alt="Image 8">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/assets/add_transaction.png" class="d-block w-100" alt="Image 9">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/assets/add_user.png" class="d-block w-100" alt="Image 10">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicators1"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicators1"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div class="card-body" data-bs-toggle="tooltip" data-bs-placement="right"
+                            title="Want to see how it's made? Check out the code here">
+                            <a href="https://github.com/evginny"><i class="bi bi-github"></i>
+                                <span class="card-title fs-4">Vaqay – Group Travel Budget Management</span>
+                            </a>
+                            <p class="card-text">An innovative web application designed to simplify group travel budget
+                                management. The tool provides a collaborative platform for planning and tracking
+                                expenses, enabling users to create trip budgets, log transactions in real-time, and
+                                analyze spending. Key features include budget creation by
+                                category, transaction tracking, user profile management, and the ability to invite other
+                                users to collaborate on shared budgets.</p>
+                            <span class="card-text"><small class="text-muted">Python, Jinja, Flask, MySQL, HTML,
+                                    CSS, and MySQL</small></span>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-6 col-xl-6">
+                    <div class="card mb-3 h-100">
+                        <div id="carouselIndicators3" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="/assets/login.png" class="d-block w-100" alt="Image 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/assets/inventory.png" class="d-block w-100" alt="Image 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/assets/add_inv.png" class="d-block w-100" alt="Image 3">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/assets/cust.png" class="d-block w-100" alt="Image 4">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/assets/cart.png" class="d-block w-100" alt="Image 5">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/assets/summary.png" class="d-block w-100" alt="Image 6">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicators3"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicators3"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div class="card-body" data-bs-toggle="tooltip" data-bs-placement="right"
+                            title="Want to see how it's made? Check out the code here">
+                            <a href="https://github.com/evginny"><i class="bi bi-github"></i>
+                                <span class="card-title fs-4">Various Console-Based Projects</span>
+                            </a>
+                            <p class="card-text">This project is focused on developing a robust, web-enabled e-commerce
+                                This collection of console-based applications showcases my coding skills across multiple
+                                languages, including Java, C, and C++. Each project was carefully crafted with a focus
+                                on efficient and readable code, problem-solving skills, and utilization of appropriate
+                                data structures and algorithms. From lower-level programming in C to object-oriented
+                                design in Java and C++, these projects highlight my versatility and commitment to best
+                                programming practices.
+                            </p>
+                            <span class="card-text"><small class="text-muted">Java, C, C++</small></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- end container -->
+    </section>
+
+    <!-- contact -->
+    <section id="contact" class="mt-4">
+        <div class="container-lg">
+            <h1>
+                <div class="display-5">Contact Me</div>
+            </h1>
+            <div class="row my-2 g-5 align-items-stretch justify-content-center">
+                <div class="col-sm-12 col-md-5 text-sm-center text-md-start">
+                    <p class="fs-3">I'm excited to hear from you!
+                        <br> Don't hesitate to contact me at:
+                    </p>
+                    <a class="contact-link" href="#">
+                        <i class="bi-2 bi bi-envelope"></i>
+                        <span class="bi-text fs-4">ginny.kalashn@gmail.com</span>
+                    </a>
+                    <br>
+                    <a class="contact-link" href="#">
+                        <i class="bi-2 bi bi-github"></i>
+                        <span class="bi-text fs-4">evginny</span>
+                    </a>
+                    <br>
+                    <a class="contact-link" href="#">
+                        <i class="bi-2 bi bi-linkedin"></i>
+                        <span class="bi-text fs-4">ev-kalashn</span>
+                    </a>
+                    <br>
+                    <p class="fs-5 mt-3">Or send me a message right here!
+                    </p>
+                </div>
+                <div class="col-sm-12 col-md-7">
+                    <form>
+                        <div class="row align-items-stretch justify-content-center">
+                            <div class="col-6">
+                                <div class="mb-3">
+                                    <label for="inputEmail1" class="form-label">Email address</label>
+                                    <input type="email" class="form-control" id="inputEmail1"
+                                        aria-describedby="emailHelp">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="mb-3">
+                                    <label for="fullName" class="form-label">Full Name</label>
+                                    <input type="text" class="form-control" id="fullName">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="subject" class="form-label">Subject</label>
+                            <input type="text" class="form-control" id="subject">
+                        </div>
+                        <div class="mb-3">
+                            <label for="formControlTextarea1" class="form-label">Message</label>
+                            <textarea class="form-control" id="formControlTextarea1" rows="3"></textarea>
+                        </div>
+                        <div class="mb-3 d-flex justify-content-center">
+                            <button type="submit" class="cssbuttons-io-button btn">Send a Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

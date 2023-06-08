@@ -99,6 +99,10 @@
             background-color: var(--color2);
         }
 
+        .progress-bar-web {
+            background-color: var(--color1);
+        }
+
         .card-body a {
             color: #68D372;
         }
@@ -129,6 +133,14 @@
 
         .form-control:focus {
             box-shadow: 0 0.5em 1.5em -0.5em var(--color2);
+        }
+
+        .web {
+            color: var(--color1);
+        }
+
+        .hid-text {
+            color: var(--color1);
         }
 
         @media (max-width: 576px) {
@@ -329,15 +341,15 @@
                                 <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="75"
                                     aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
-                            <p class="card-text mb-0 d-none">Web 4</p>
-                            <div class="progress mb-3 d-none">
-                                <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="75"
-                                    aria-valuemin="0" aria-valuemax="100"></div>
+                            <p class="card-text mb-0 web">Web 4</p>
+                            <div class="progress mb-3 web d-none">
+                                <div class="progress-bar progress-bar-web" role="progressbar" style="width: 100%"
+                                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
-                            <p class="card-text mb-0 d-none">Web 5</p>
-                            <div class="progress mb-3 d-none">
-                                <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="75"
-                                    aria-valuemin="0" aria-valuemax="100"></div>
+                            <p class="card-text mb-0 web">Web 5</p>
+                            <div class="progress mb-3 web d-none">
+                                <div class="progress-bar progress-bar-web" role="progressbar" style="width: 100%"
+                                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
                     </div>
@@ -423,10 +435,8 @@
                                 implemented as a digital version where players can challenge an AI opponent. The project
                                 aims to provide an immersive gaming experience by allowing players to customize the
                                 game's background and card backs according to their preferences.</p>
-                            <p class="caed-text d-none">
-                                empty text, empty text, empty text, empty text, empty text, empty text, empty text,
-                                empty text, empty text, empty text, empty text, empty text, empty text, empty text,
-                                empty text, empty text, empty text.
+                            <p class="card-text hid-text">
+                                implemented as a digital version where players can challenge an AI opponent. The project
                             </p>
                             <span class="card-text"><small class="text-muted">Java with full UI and open-source
                                     asserts in Java Swing</small></span>
